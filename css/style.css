@@ -1,0 +1,49 @@
+/* ------------ CUSTOM PROPERTIES ------------- */
+
+:root {
+  /* Colors */
+  --cl-black: 0, 0%, 5%;
+  --cl-white: 0 0% 100%;
+  --cl-nav-btn: 0, 0%, 4%;
+
+  /* Font families */
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-source-sans-pro: "Source Sans Pro", sans-serif;
+}
+
+/* RESET */
+/* CSS Reset https://andy-bell.co.uk/a-modern-css-reset/ */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Set up body */
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  color: hsl(var(--cl-black));
+  background-color: hsl(var(--cl-white));
+  font-family: var(--ff-source-sans-pro);
+}
+
+/* Make images easier to work with */
+
+img {
+  max-width: 100%;
+  display: block;
+}
