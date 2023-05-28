@@ -125,15 +125,35 @@ nav ul {
 
 /* ---------------- LINKS ------------------------- */
 
-/* a {
+a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.nav-btn {
-  font-weight: 600;
+nav a {
   color: hsl(var(--cl-nav-btn));
-} */
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  border-bottom: 1px solid hsl(var(--cl-nav-btn));
+}
+
+.featured-article a {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.featured-article a:hover,
+.featured-article a:focus,
+.featured-article a:active {
+  font-size: 2.125rem;
+  border-bottom: 2px solid hsl(var(--cl-black));
+}
 
 /* Layout */
 
