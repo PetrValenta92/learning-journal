@@ -40,8 +40,7 @@ p {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  /* color: hsl(var(--cl-black)); */
-  color: red;
+  color: hsl(var(--cl-black));
   background-color: hsl(var(--cl-white));
   font-family: var(--ff-source-sans-pro);
   font-weight: 400;
@@ -110,7 +109,21 @@ p {
   line-height: 1.25;
 }
 
-/* Navigation */
+/* --------------- NAVIGATION ---------------------- */
+
+nav {
+  font-size: 0.75rem;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ---------------- LINKS ------------------------- */
 
 /* a {
   color: inherit;
