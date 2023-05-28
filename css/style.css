@@ -5,6 +5,10 @@
   --cl-black: 0, 0%, 5%;
   --cl-white: 0 0% 100%;
   --cl-nav-btn: 0, 0%, 4%;
+  --cl-article-title: 0, 0%, 8%;
+  --cl-article-body: 0, 0%, 31%;
+  --cl-page-title: 0, 0%, 93%;
+  --cl-copyright: 0, 0%, 84%;
 
   /* Font families */
   --ff-roboto: "Roboto", sans-serif;
@@ -36,9 +40,11 @@ p {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  color: hsl(var(--cl-black));
+  /* color: hsl(var(--cl-black)); */
+  color: red;
   background-color: hsl(var(--cl-white));
   font-family: var(--ff-source-sans-pro);
+  font-weight: 400;
 }
 
 /* Make images easier to work with */
@@ -48,19 +54,61 @@ img {
   display: block;
 }
 
-/* Utility classes */
+/* ---------------- UTILITY CLASSES ------------------*/
+
+.container {
+  width: 100%;
+  max-width: 25.875rem;
+  margin: 0 auto;
+}
 
 .uppercase {
   text-transform: uppercase;
 }
 
-/* Typography */
+/* ----------------- TYPOGRAPHY ------------------- */
 
-/* h1 {
-  font-family: var(--ff-roboto);
-  font-size: 0.875em;
+h1,
+h2,
+.page-title {
   line-height: 1.08;
-} */
+}
+
+h1 {
+  font-family: var(--ff-roboto);
+  font-size: 0.875rem;
+}
+
+h2 {
+  color: hsl(var(--cl-article-title));
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.featured-article-date,
+.page-title,
+.copyright {
+  font-size: 0.75rem;
+}
+
+.recent-article-body {
+  color: hsl(var(--cl-article-body));
+  line-height: 1.25;
+}
+
+.page-title {
+  color: hsl(var(--cl-page-title));
+  font-weight: 700;
+}
+
+.copyright {
+  color: hsl(var(--cl-copyright));
+  line-height: 1.25;
+}
 
 /* Navigation */
 
@@ -76,11 +124,7 @@ img {
 
 /* Layout */
 
-/* .container {
-  width: 100%;
-  max-width: 25.875rem;
-  margin: 0 auto;
-}
+/* 
 
 header .container {
   border: 1px solid red;
