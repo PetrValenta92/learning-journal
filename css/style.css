@@ -9,6 +9,7 @@
   --cl-article-body: 0, 0%, 31%;
   --cl-page-title: 0, 0%, 93%;
   --cl-copyright: 0, 0%, 84%;
+  --cl-bg-footer: 0, 0%, 13%;
 
   /* Font families */
   --ff-roboto: "Roboto", sans-serif;
@@ -59,7 +60,7 @@ img {
   width: 100%;
   max-width: 26.5625rem;
   margin: 0 auto;
-  padding: 0 1.25rem 0 1.25rem;
+  padding: 0 1.25rem;
   display: flex;
   flex-direction: column;
 }
@@ -104,6 +105,10 @@ p {
 .recent-article-body {
   color: hsl(var(--cl-article-body));
   line-height: 1.25;
+}
+
+.recent-article-date {
+  font-size: 0.875rem;
 }
 
 .page-title {
@@ -208,6 +213,41 @@ header .container {
   order: -1;
 }
 
+.recent-articles .container {
+  padding: 2.125rem 1.25rem 3.5rem;
+  gap: 2.625rem;
+}
+
+.recent-articles article {
+  display: flex;
+  flex-direction: column;
+}
+
 .recent-article-img {
+  margin-bottom: 0.875rem;
   order: -2;
+}
+
+/*
+.view-more-btn {
+  background: none;
+  border: none;
+  border-bottom: 1px solid hsl(var(--cl-black));
+  color: hsl(var(--cl-black));
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-transform: capitalize;
+  cursor: pointer;
+} */
+
+footer {
+  background-color: hsl(var(--cl-bg-footer));
+  padding: 2.25rem 0;
+}
+
+footer .container {
+  justify-content: center;
+  align-items: center;
 }
