@@ -85,6 +85,12 @@ h1 {
   font-size: 0.875rem;
 }
 
+@media (width > 768px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
 h2 {
   color: hsl(var(--cl-article-title));
   font-size: 1.5rem;
@@ -126,12 +132,24 @@ nav {
   font-size: 0.75rem;
 }
 
+@media (width > 768px) {
+  nav {
+    font-size: 1rem;
+  }
+}
+
 nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+@media (width > 768px) {
+  nav ul{
+    gap: 3rem;
+  }
 }
 
 /* ---------------- LINKS ------------------------- */
@@ -168,22 +186,40 @@ nav a:active {
 /* ---------------- LAYOUT -------------------- */
 
 header .container {
-  padding: 1rem 1.5rem 1.125rem 1.25rem;
-  display: flex;
+  padding: 1em 1.5em 1.125em 1.25em;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
+@media (width > 768px) {
+  header .container {
+    padding: 1.5em 3.3125em;
+  }
+}
+
 .logo-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.1875em;
+  gap: 0.1875rem;
+}
+
+@media (width > 768px) {
+  .logo-wrapper {
+    gap: 0.3125rem;
+  }
 }
 
 .logo {
-  width: 1.4775em;
-  height: 1.4775em;
+  width: 1.4775rem;
+  height: 1.4775rem;
+}
+
+@media (width > 768px) {
+  .logo {
+    width: 2.125rem;
+    height: 2.125rem;
+  }
 }
 
 .featured-article .container {
