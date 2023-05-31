@@ -50,8 +50,10 @@ body {
 /* Make images easier to work with */
 
 img {
+  width: 100%;
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 /* ---------------- UTILITY CLASSES ------------------*/
@@ -316,6 +318,7 @@ header .container {
 .recent-article-img {
   margin-bottom: 0.875rem;
   order: -2;
+  height: 14.5rem;
 }
 
 /*
