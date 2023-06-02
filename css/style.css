@@ -85,6 +85,8 @@ img {
 
 /* ----------------- TYPOGRAPHY ------------------- */
 
+/* Home page */
+
 h1,
 h2,
 .page-title,
@@ -107,18 +109,6 @@ h2 {
   color: hsl(var(--cl-article-title));
   font-size: 1.5rem;
   font-weight: 700;
-}
-
-.post-title {
-  font-size: 2rem;
-}
-
-h3 {
-  font-weight: 700;
-}
-
-h3, p {
-  font-size: 1rem;
 }
 
 .featured-article-date,
@@ -155,6 +145,16 @@ h3, p {
 
 .copyright {
   color: hsl(var(--cl-copyright));
+}
+
+/* Post page */
+
+.post-title {
+  font-size: 2rem;
+}
+
+span {
+  font-weight: 700;
 }
 
 /* --------------- NAVIGATION ---------------------- */
@@ -229,6 +229,8 @@ nav a:active {
 } */
 
 /* ---------------- LAYOUT -------------------- */
+
+/* Home page */
 
 header .container {
   padding: 1em 1.5em 1.125em 1.25em;
@@ -319,9 +321,11 @@ header .container {
 }
 
 .recent-articles .container {
-  background-color: hsl(var(--cl-bg-recent-articles));
   padding: 2.125rem 1.25rem 3.5rem;
   gap: 2.625rem;
+
+  /* !Delete */
+  border: 1px solid limegreen;
 }
 
 .recent-articles article {
@@ -357,4 +361,18 @@ footer {
 footer .container {
   justify-content: center;
   align-items: center;
+}
+
+/* Post page */
+
+.post .container{
+  margin: 1.5rem auto 3.25rem auto;
+}
+
+.post-title {
+  margin: 1rem 0;
+}
+
+.post-img {
+  margin: 2.25rem 0;
 }
