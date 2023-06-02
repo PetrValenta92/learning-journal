@@ -111,6 +111,11 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .featured-article-date,
 .page-title,
 .copyright {
@@ -156,6 +161,8 @@ h2 {
 span {
   font-weight: 700;
 }
+
+
 
 /* --------------- NAVIGATION ---------------------- */
 
@@ -269,7 +276,7 @@ header .container {
   }
 } */
 
-.featured-article .container {
+.home .featured-article .container {
   color: hsl(var(--cl-white));
   text-shadow: 1px 1px 2px hsl(var(--cl-black));
   min-height: 18.375rem;
@@ -287,7 +294,7 @@ header .container {
   }
 } */
 
-.featured-article-title,
+.home .featured-article-title,
 .recent-article-title {
   padding: 0.5rem 0;
 }
@@ -304,7 +311,7 @@ header .container {
   }
 } */
 
-.featured-article-body {
+.home .featured-article-body {
   max-width: 37.5rem;
   padding-bottom: 1.625rem;
 }
@@ -321,11 +328,11 @@ header .container {
 }
 
 .recent-articles .container {
-  padding: 2.125rem 1.25rem 3.5rem;
   gap: 2.625rem;
+}
 
-  /* !Delete */
-  border: 1px solid limegreen;
+.home .recent-articles .container {
+  padding: 2.125rem 1.25rem 3.5rem;
 }
 
 .recent-articles article {
@@ -365,14 +372,22 @@ footer .container {
 
 /* Post page */
 
-.post .container{
+.post .featured-article .container{
   margin: 1.5rem auto 3.25rem auto;
 }
 
-.post-title {
+.post .featured-article-title {
   margin: 1rem 0;
 }
 
-.post-img {
+.post .featured-article-img {
   margin: 2.25rem 0;
+}
+
+.recent-articles-title {
+  text-align: center;
+}
+
+.post .recent-articles .container {
+  padding: 1.75rem 1.25rem 3.5rem;
 }
