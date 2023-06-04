@@ -89,8 +89,7 @@ img {
 
 h1,
 h2,
-.page-title,
-.post-title {
+.page-title {
   line-height: 1.08;
 }
 
@@ -139,8 +138,7 @@ h3 {
   color: hsl(var(--cl-article-body));
 }
 
-.recent-article-date,
-.post-date {
+.recent-article-date {
   font-size: 0.875rem;
 }
 
@@ -153,14 +151,10 @@ h3 {
   color: hsl(var(--cl-copyright));
 }
 
-/* Post page */
+/* About page */
 
-.post-title {
-  font-size: 2rem;
-}
-
-span {
-  font-weight: 700;
+.about h2 {
+  font-size: 2.1775rem;
 }
 
 /* --------------- NAVIGATION ---------------------- */
@@ -369,10 +363,10 @@ footer .container {
   align-items: center;
 }
 
-/* Post page */
+/* Post / About page */
 
 .post .featured-article .container {
-  margin: 1.5rem auto 3.25rem auto;
+  margin: 1.5rem auto 3.25rem;
 }
 
 .post .featured-article-title {
@@ -384,7 +378,9 @@ footer .container {
 }
 
 .post .featured-article-body h3,
-.post .featured-article-body p:not(:last-child) {
+.post .featured-article-body p:not(:last-child),
+.about .featured-article-body h3,
+.about .featured-article-body p:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -392,8 +388,33 @@ footer .container {
   text-align: center;
 }
 
-.post .recent-articles .container {
+.post .recent-articles .container,
+.about .recent-articles .container {
   padding: 1.75rem 1.25rem 3.5rem;
 }
 
 /* About page */
+
+.about .featured-article .container {
+  margin: 0 auto 2.875rem;
+}
+
+.about-article-profile-picture {
+  width: 100%;
+  max-width: 11.375rem;
+  margin: 1.625rem 0;
+  border-radius: 50%;
+}
+
+.about-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-article-hero {
+  margin-bottom: 3.125rem;
+}
+
+.about-article .featured-article-title {
+  margin-bottom: 1rem;
+}
