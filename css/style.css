@@ -59,12 +59,10 @@ img {
 /* ---------------- UTILITY CLASSES ------------------*/
 
 .container {
-  max-width: 414px;
-  /* !Delete when it's ready */
-
   width: 100%;
   margin: 0 auto;
   padding: 0 1.25rem;
+
   display: flex;
   flex-direction: column;
 }
@@ -281,11 +279,11 @@ header .container {
   background-color: hsl(var(--cl-bg-footer));
 }
 
-/* @media (width >= 768px) {
-  .featured-article .container {
-    min-height: 30.5rem;
+@media (width >= 709px) {
+  .home .featured-article .container {
+    min-height: 30rem;
   }
-} */
+}
 
 .home .featured-article-title,
 .recent-article-title {
@@ -326,6 +324,18 @@ header .container {
 
 .home .recent-articles .container {
   padding: 2.125rem 1.25rem 3.5rem;
+}
+
+/* !TODO */
+
+@media (width >= 709px) {
+  .home .recent-articles .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.625rem;
+    justify-content: center;
+  }
 }
 
 .recent-articles article {
