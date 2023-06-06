@@ -219,11 +219,17 @@ nav a:active {
   line-height: 1.08;
 }
 
-/* @media (width >= 768px) {
+@media (768px <= width < 1085px) {
+  .featured-article a {
+    font-size: 2.25rem;
+  }
+}
+
+@media (width >= 1085px) {
   .featured-article a {
     font-size: 2.5rem;
   }
-} */
+}
 
 .featured-article a:hover,
 .featured-article a:focus,
@@ -231,13 +237,21 @@ nav a:active {
   font-size: 2.125rem;
 }
 
-/* @media (width >= 768px) {
+@media (768px <= width < 1085px) {
   .featured-article a:hover,
   .featured-article a:focus,
   .featured-article a:active {
-    font-size: 2.75rem;
+    font-size: 2.375rem;
   }
-} */
+}
+
+@media (width >= 1085px) {
+  .featured-article a:hover,
+  .featured-article a:focus,
+  .featured-article a:active {
+    font-size: 2.625rem;
+  }
+}
 
 /* ---------------- LAYOUT -------------------- */
 
@@ -245,7 +259,7 @@ nav a:active {
 
 header .container {
   max-width: 100%;
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -253,13 +267,13 @@ header .container {
 
 @media (768px <= width < 1085px) {
   header .container {
-    padding: 1.25em 2em;
+    padding: 1.25rem 2rem;
   }
 }
 
 @media (width >= 1085px) {
   header .container {
-    padding: 1.75em 3.25em;
+    padding: 1.75rem 3.25rem;
   }
 }
 
@@ -292,7 +306,7 @@ header .container {
 .home .featured-article .container {
   color: hsl(var(--cl-white));
   text-shadow: 1px 1px 2px hsl(var(--cl-black));
-  min-height: 18.375rem;
+  min-height: 29vh;
   justify-content: end;
 
   background-image: url(../images/article-images/featured-article-bg-img.jpg);
@@ -301,9 +315,17 @@ header .container {
   background-color: hsl(var(--cl-bg-footer));
 }
 
-@media (width >= 670px) {
+@media (768px <= width < 1085px) {
+  .home .featured-article .container {
+    min-height: 39vh;
+    padding: 0 2.25rem;
+  }
+}
+
+@media (width >= 1085px) {
   .home .featured-article .container {
     min-height: 49vh;
+    padding: 0 3.25rem;
   }
 }
 
@@ -329,11 +351,17 @@ header .container {
   padding-bottom: 1.625rem;
 }
 
-/* @media (width >= 768px) {
-  .featured-article-lead {
+@media (768px <= width < 1085px) {
+  .home .featured-article-lead {
+    padding-bottom: 2.625rem;
+  }
+}
+
+@media (width >= 1085px) {
+  .home .featured-article-lead {
     padding-bottom: 3.75rem;
   }
-} */
+}
 
 .featured-article-date,
 .recent-article-date {
