@@ -164,7 +164,7 @@ nav {
 
 @media (768px <= width < 1085px) {
   nav {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -381,8 +381,15 @@ header .container {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-    gap: 1.625rem;
+    gap: 1.25rem;
     justify-content: center;
+  }
+}
+
+@media (width >= 1085px) {
+  .home .recent-articles .container {
+    padding: 3.25rem;
+    gap: 1.625rem;
   }
 }
 
