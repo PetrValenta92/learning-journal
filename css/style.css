@@ -377,7 +377,7 @@ header .container {
 }
 
 @media (width >= 670px) {
-  .home .recent-articles .container {
+  .recent-articles .container {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -387,7 +387,7 @@ header .container {
 }
 
 @media (width >= 1085px) {
-  .home .recent-articles .container {
+  .recent-articles .container {
     padding: 3.25rem;
     gap: 1.625rem;
   }
@@ -432,8 +432,15 @@ footer .container {
 
 /* Post / About page */
 
+.post,
+.about {
+  background-color: hsl(var(--cl-article-body), 2%);
+}
+
+/* !TODO */
+
 .post .featured-article .container {
-  margin: 1.5rem auto 3.25rem;
+  padding: 2rem 1.25rem 3.125rem;
 }
 
 .post .featured-article-title {
