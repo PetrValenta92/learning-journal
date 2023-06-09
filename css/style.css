@@ -490,7 +490,7 @@ footer .container {
 
 @media (width >= 1085px) {
   .post .featured-article .container {
-    padding: 4.5rem 7.5rem;
+    padding: 4.5rem 3.25rem;
   }
 }
 
@@ -514,11 +514,35 @@ footer .container {
   margin: 2.25rem auto;
 }
 
+@media (768px <= width < 1085px) {
+  .post .featured-article-img {
+    height: 45vw;
+  }
+}
+
+@media (width >= 1085px) {
+  .post .featured-article-img {
+    height: 35vw;
+  }
+}
+
 .post .featured-article-body h3,
 .post .featured-article-body p:not(:last-child),
 .about .featured-article-body h3,
 .about .featured-article-body p:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+@media (768px <= width < 1085px) {
+  .post .featured-article-body {
+    padding: 0 2.75rem;
+  }
+}
+
+@media (width >= 1085px) {
+  .post .featured-article-body {
+    padding: 0 4.25rem;
+  }
 }
 
 .recent-articles-title {
