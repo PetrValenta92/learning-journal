@@ -364,18 +364,6 @@ header .container {
   padding: 0.5rem 0;
 }
 
-/* @media (width >= 768px) {
-  .featured-article-title {
-    padding: .5625rem 0;
-  }
-} */
-
-/* @media (width >= 768px) {
-  .recent-article-title {
-    padding: .875rem 0 .5625rem;
-  }
-} */
-
 .home .featured-article-lead {
   max-width: 37.5rem;
   padding-bottom: 1.625rem;
