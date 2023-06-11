@@ -91,6 +91,12 @@ h1 {
   font-size: 0.875rem;
 }
 
+@media (width <= 340px) {
+  h1 {
+    font-size: 0.75rem;
+  }
+}
+
 @media (768px <= width < 1085px) {
   h1 {
     font-size: 1rem;
@@ -192,6 +198,12 @@ nav {
   font-size: 0.75rem;
 }
 
+@media (width <= 340px) {
+  nav {
+    font-size: 0.625rem;
+  }
+}
+
 @media (768px <= width < 1085px) {
   nav {
     font-size: 0.875rem;
@@ -210,6 +222,12 @@ nav ul {
   list-style-type: none;
   display: flex;
   gap: 1.5rem;
+}
+
+@media (width <= 340px) {
+  nav ul {
+    gap: 1rem;
+  }
 }
 
 @media (768px <= width < 1085px) {
@@ -247,6 +265,12 @@ nav a:active {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.08;
+}
+
+@media (width <= 340px) {
+  .featured-article a {
+    font-size: 1.8125rem;
+  }
 }
 
 @media (768px <= width < 1085px) {
@@ -295,6 +319,12 @@ header .container {
   align-items: center;
 }
 
+@media (width <= 340px) {
+  .header .container {
+    padding: 1.0625rem 1.375rem;
+  }
+}
+
 @media (768px <= width < 1085px) {
   header .container {
     padding: 1.25rem 2rem;
@@ -322,6 +352,13 @@ header .container {
 .logo {
   width: 1.4775rem;
   height: 1.4775rem;
+}
+
+@media (width <= 340px) {
+  .logo {
+    width: 1.3125rem;
+    height: 1.3125rem;
+  }
 }
 
 @media (width >= 1085px) {
@@ -364,21 +401,21 @@ header .container {
   padding: 0.5rem 0;
 }
 
-/* @media (width >= 768px) {
-  .featured-article-title {
-    padding: .5625rem 0;
+@media (width <= 340px) {
+  .home .featured-article-title {
+    padding: 0.25rem 0;
   }
-} */
-
-/* @media (width >= 768px) {
-  .recent-article-title {
-    padding: .875rem 0 .5625rem;
-  }
-} */
+}
 
 .home .featured-article-lead {
   max-width: 37.5rem;
   padding-bottom: 1.625rem;
+}
+
+@media (width <= 340px) {
+  .home .featured-article-lead {
+    padding-bottom: 1.375rem;
+  }
 }
 
 @media (768px <= width < 1085px) {
