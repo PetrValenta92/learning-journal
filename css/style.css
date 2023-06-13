@@ -311,6 +311,8 @@ nav a:active {
 
 /* Header */
 
+/* https://www.instagram.com/p/Cs4Zi1mAsET/ */
+
 header .container {
   max-width: 100%;
   padding: 1rem 1.5rem;
@@ -681,3 +683,7 @@ footer .container {
     padding: 0 7.5rem;
   }
 }
+
+/* Contacts page */
+
+/* https://css-tricks.com/zooming-background-images/ */
