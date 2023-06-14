@@ -307,6 +307,20 @@ nav a:active {
   }
 }
 
+.contact a {
+  /* display: none; */
+  color: hsl(var(--cl-white));
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* .contact:hover a,
+.contact:focus a,
+.contact:active a {
+  display: block;
+  border-bottom: 1px solid hsl(var(--cl-white));
+} */
+
 /* ---------------- LAYOUT -------------------- */
 
 /* Header */
@@ -687,3 +701,54 @@ footer .container {
 /* Contacts page */
 
 /* https://css-tricks.com/zooming-background-images/ */
+
+.contact {
+  height: 40vh;
+  border: 1px solid hsl(var(--cl-bg-footer));
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.contact div {
+  width: 100%;
+  height: 100%;
+  background-position: 20%;
+  background-size: cover;
+  background-color: hsl(var(--cl-bg-footer));
+  transition: .7s;
+}
+
+.contact:hover div,
+.contact:focus div, 
+.contact:active div {
+  transform: scale(1.2);
+}
+
+.contact div::before {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(var(--cl-bg-footer), 75%);
+}
+
+.contact:hover div::before,
+.contact:focus div::before,
+.contact:active div::before {
+  display: block;
+}
+
+.github {
+  background-image: url(../images/contacts-images/github.png);
+}
+
+.linkedin {
+  background-image: url(../images/contacts-images/linkedIn.png);
+}
+
+.instagram {
+  background-image: url(../images/contacts-images/instagram.png);
+}
