@@ -55,6 +55,7 @@ img {
   max-width: 100%;
   display: block;
   object-fit: cover;
+  filter: grayscale(35%)
 }
 
 /* ---------------- UTILITY CLASSES ------------------*/
@@ -316,6 +317,7 @@ nav a:active {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+  text-shadow: 2px 2px hsl(var(--cl-article-title));
 
   position: absolute;
   margin: auto;
@@ -529,6 +531,8 @@ header .container {
 
 /* Footer */
 
+/* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+
 footer {
   background-color: hsl(var(--cl-bg-footer));
   padding: 2.25rem 0;
@@ -738,6 +742,7 @@ footer .container {
   background-size: cover;
   background-color: hsl(var(--cl-bg-footer));
   transition: all .7s;
+  filter: grayscale(55%);
 }
 
 .contact:hover div,
