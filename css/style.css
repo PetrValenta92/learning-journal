@@ -45,6 +45,7 @@ body {
   color: hsl(var(--cl-black));
   font-family: var(--ff-source-sans-pro);
   font-weight: 400;
+  position: relative;
 }
 
 /* Make images easier to work with */
@@ -483,21 +484,21 @@ header .container {
 
 .home .recent-articles .container,
 .contacts .recent-articles .container {
-  padding: 2.125rem 1.25rem 3.5rem;
+  padding: 2.125rem 1.25rem 10rem;
 }
 
 
 @media (width >= 670px) {
   .home .recent-articles .container,
   .contacts .recent-articles .container {
-    padding: 2.125rem 2.25rem 3.5rem;
+    padding: 2.125rem 2.25rem 9.75rem;
   }
 }
 
 @media (width >= 1085px) {
   .home .recent-articles .container,
   .contacts .recent-articles .container {
-    padding: 3.25rem;
+    padding: 3.25rem 3.25rem 9.75rem;
   }
 }
 
@@ -531,6 +532,9 @@ header .container {
 footer {
   background-color: hsl(var(--cl-bg-footer));
   padding: 2.25rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .container {
@@ -619,20 +623,20 @@ footer .container {
 
 .post .recent-articles .container,
 .about .recent-articles .container {
-  padding: 1.75rem 1.25rem 3.5rem;
+  padding: 1.75rem 1.25rem 10rem;
 }
 
 @media (width >= 670px) {
   .post .recent-articles .container,
   .about .recent-articles .container {
-    padding: 1.75rem 2.5rem 3.125rem;
+    padding: 1.75rem 2.5rem 9.75rem;
   }
 }
 
 @media (width >= 1085px) {
   .post .recent-articles .container,
   .about .recent-articles .container {
-    padding: 1.75rem 3.25rem 3.125rem;
+    padding: 1.75rem 3.25rem 9.75rem;
   }
 }
 
