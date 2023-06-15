@@ -116,13 +116,15 @@ h2 {
 }
 
 @media (768px <= width < 1085px) {
-  .post .featured-article h2 {
+  .post .featured-article h2,
+  .contacts h2 {
     font-size: 1.875rem;
   }
 }
 
 @media (width >= 1085px) {
-  .post .featured-article h2 {
+  .post .featured-article h2,
+  .contacts h2 {
     font-size: 2.25rem;
   }
 }
@@ -308,18 +310,26 @@ nav a:active {
 }
 
 .contact a {
-  /* display: none; */
+  display: none;
   color: hsl(var(--cl-white));
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
+  text-align: center;
+
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 3rem;
 }
 
-/* .contact:hover a,
+.contact:hover a,
 .contact:focus a,
 .contact:active a {
   display: block;
-  border-bottom: 1px solid hsl(var(--cl-white));
-} */
+}
 
 /* ---------------- LAYOUT -------------------- */
 
@@ -471,18 +481,22 @@ header .container {
   }
 }
 
-.home .recent-articles .container {
+.home .recent-articles .container,
+.contacts .recent-articles .container {
   padding: 2.125rem 1.25rem 3.5rem;
 }
 
+
 @media (width >= 670px) {
-  .home .recent-articles .container {
+  .home .recent-articles .container,
+  .contacts .recent-articles .container {
     padding: 2.125rem 2.25rem 3.5rem;
   }
 }
 
 @media (width >= 1085px) {
-  .home .recent-articles .container {
+  .home .recent-articles .container,
+  .contacts .recent-articles .container {
     padding: 3.25rem;
   }
 }
@@ -527,7 +541,8 @@ footer .container {
 /* Post / About page */
 
 .post,
-.about {
+.about,
+.contacts {
   background-color: hsl(var(--cl-article-body), 2%);
 }
 
@@ -702,20 +717,23 @@ footer .container {
 
 /* https://css-tricks.com/zooming-background-images/ */
 
+.contacts .recent-articles-title {
+  padding-top: 1em;
+}
+
 .contact {
-  height: 40vh;
+  height: 50vh;
   border: 1px solid hsl(var(--cl-bg-footer));
   overflow: hidden;
-  cursor: pointer;
 }
 
 .contact div {
   width: 100%;
   height: 100%;
-  background-position: 20%;
+  background-position: center;
   background-size: cover;
   background-color: hsl(var(--cl-bg-footer));
-  transition: .7s;
+  transition: all .7s;
 }
 
 .contact:hover div,
@@ -742,13 +760,13 @@ footer .container {
 }
 
 .github {
-  background-image: url(../images/contacts-images/github.png);
+  background-image: url(../images/contacts-images/github.jpg);
 }
 
 .linkedin {
-  background-image: url(../images/contacts-images/linkedIn.png);
+  background-image: url(../images/contacts-images/linkedIn.jpg);
 }
 
 .instagram {
-  background-image: url(../images/contacts-images/instagram.png);
+  background-image: url(../images/contacts-images/instagram.jpg);
 }
