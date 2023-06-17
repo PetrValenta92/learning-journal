@@ -13,6 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Style -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Petr's Learning Journey - My new journey</title>
@@ -28,6 +35,16 @@
           />
           <h1 class="title">Petr's Learning Journey</h1>
         </div>
+        <div class="overlay"></div>
+        <button class="burger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-close"></i>
+        </button>
+        <aside>
+          <a class="uppercase" href="./index.html">Home</a>
+          <a class="uppercase" href="./about.html">About me</a>
+          <a class="uppercase" href="./contacts.html">Contacts</a>
+        </aside>
         <nav>
           <ul>
             <li><a class="uppercase" href="./index.html">Home</a></li>
@@ -154,5 +171,8 @@
         <p class="copyright">Copyright© 2023</p>
       </div>
     </footer>
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
   </body>
 </html>
