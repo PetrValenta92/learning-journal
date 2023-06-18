@@ -72,6 +72,10 @@ Contacts page
 - Mobile first design
 - Multiple pages design
 - Accessibility focus design
+- Responsive design
+- Relative units
+- Media queries
+- Viewport meta tags
 
 ### What I learned
 
@@ -79,7 +83,7 @@ Contacts page
 
 ### Continued development
 
-...
+In future I would like to fill the page with my own original contant. Pictures and texts are going to be authentic and personal. With that I would like to add more articles which would be accessible (there will be a link on them). Next thing would be finishing the "View more" button, which is already prepared, but I need more time to finishing all the styling and javascript code.
 
 ## Author
 
