@@ -65,28 +65,28 @@ Contacts page
 ### Built with
 
 - Semantic HTML5 markup
-- Modal
-- Forms
 - CSS custom properties
 - CSS pseudoclasses
 - Flexbox
-- Vanilla JavaScript
+- GRID
+- Mobile first design
+- Multiple pages design
+- Accessibility focus design
 
 ### What I learned
 
-I built the project based on the provided design Figma template. First I have had prepared the HTML and CSS part of the app on which I was able to practice my knowledge of semantic HTML5 and CSS. For easier work with layout I used Flexbox several times. Also I used the custom properties for easier work with colors and its oppacity. For the buttons I have used different pseudoclasses to enrich the user's experience.
-Then I wrote the JavaScript part of the app. There I used mostly the new knowledge which I have had learned from _Module 5 - Essential JavaScript concepts_
+...
 
 ### Continued development
 
-In the future I'd like to update the layout to be responsive! Also I would like to get involved with possible "meal deal" offers. A discount will appear based on combinations of meals ordered. I would also like to link the app to a local database. This will store orders, assign them identification numbers, collect customer information and then offer them the same meals as the last order.
+...
 
 ## Author
 
 - Website - _to be added..._
 - GitHub - [@PetrValenta92](https://github.com/PetrValenta92)
 - LinkedIn - [@valentapetr](https://www.linkedin.com/in/valentapetr/)
-- Instagram - [@petr.codes](https://www.instagram.com/petr.codes/)
+- Instagram - [@petr_thedev](https://www.instagram.com/petr_thedev/)
 
 ## Acknowledgments
 
