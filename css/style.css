@@ -591,8 +591,9 @@ header .container {
   height: 14.5rem;
 }
 
-/*
-.view-more-btn {
+/* ! Will add in future */
+
+/* .view-more-btn {
   background: none;
   border: none;
   border-bottom: 1px solid hsl(var(--cl-black));
