@@ -34,19 +34,24 @@ The Learning Journal webpage allows users to do/see following:
 ### Screenshot
 
 Home page
+
 ![Desktop](./images/screenshots/home_desktop.png)
+
 ![Mobile](./images/screenshots/home_mobile.png)
 ![Burger](./images/screenshots/home_mobile_burger.png)
 
 Article page
+
 ![Desktop](./images/screenshots/article_desktop.png)
 ![Mobile](./images/screenshots/article_mobile.png)
 
 About page
+
 ![Desktop](./images/screenshots/about_desktop.png)
 ![Mobile](./images/screenshots/about_mobile.png)
 
 Contacts page
+
 ![Desktop](./images/screenshots/contacts_desktop.png)
 ![Mobile](./images/screenshots/contacts_mobile.png)
 
